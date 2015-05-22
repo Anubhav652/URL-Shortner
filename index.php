@@ -2,6 +2,8 @@
 	$text = "";
 	if( isset($_POST['text'] ) ) {
 		$text = $_POST['text'];
+	} else {
+		$text = "";
 	}
 	function encrypt( $code ) {
 		return base64_encode( $code );
@@ -23,7 +25,7 @@
 			<form action="index.php" method="post">
 				<input type="edit" class="e" name="text" value=<?php echo $text; ?>/> <input type="submit" value="Shorten now!" class="b" />
 			</form>
-			<small>Made by Anubhav | anubhavagarwal033@gmail.com</small>
+			<small><b>Made by Anubhav | anubhavagarwal033@gmail.com</b></small>
 			<br>
 			<?php
 				if ($text !== "" && filter_var($text, FILTER_VALIDATE_URL) !== false ) {
