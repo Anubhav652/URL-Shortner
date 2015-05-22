@@ -9,11 +9,24 @@ body {
 	height: 600px;
 	color: white;
 	background-color: orange;
+  border-radius: 7px;
 }
 
+big {
+   color: black;
+   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+small {
+  font-size: 1%;
+}
+ 
 h1 {
 	font-size: 300%;
 	color: #777;
+  text-shadow: -3px 1px 0px #FFFF00;
 }
 
 .e {
@@ -30,12 +43,17 @@ h1 {
 }
 
 .b {
-  color: black;
-  background=color: white;
+  color: #888;
+  background-color: #00F0F0;
   border: solid 1px #777;
   border-radius: 5px;
   width: 200px;
   height: 25px;
+}
+
+.b:hover {
+  background-color: #0010F0;
+  cursor: pointer;
 }
 
 .b:focus {
