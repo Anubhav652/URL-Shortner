@@ -1,0 +1,43 @@
+body {
+	background-color: #FFFF0F;
+}
+
+#mid {
+	margin: auto;
+	text-align: center;
+	width: 700px;
+	height: 600px;
+	color: white;
+	background-color: orange;
+}
+
+h1 {
+	font-size: 300%;
+	color: #777;
+}
+
+.e {
+  color: black;
+  background=color: white;
+  border: solid 1px #777;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+}
+
+.e:focus {
+  outline: 0;
+}
+
+.b {
+  color: black;
+  background=color: white;
+  border: solid 1px #777;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+}
+
+.b:focus {
+  outline: 0;
+}
